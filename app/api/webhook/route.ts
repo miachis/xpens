@@ -11,5 +11,3 @@ export async function POST(request: NextRequest) {
 		},
 	);
 }
-
-// esure the request comes from mono

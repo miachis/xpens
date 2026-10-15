@@ -24,6 +24,7 @@ async function InititateAccountLinking(
 	})
 		.then((response) => response.json())
 		.then((parsedResponse) => {
+			console.log(parsedResponse.data.mono_url);
 			return {
 				url: parsedResponse.data.mono_url,
 				customer: parsedResponse.data.customer,
@@ -34,3 +35,5 @@ async function InititateAccountLinking(
 			return;
 		});
 }
+
+InititateAccountLinking("Solomon", "example@mail.com");
